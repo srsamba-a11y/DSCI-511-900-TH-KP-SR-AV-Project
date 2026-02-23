@@ -1,0 +1,71 @@
+# Data Dictionary Template
+
+Use this template to document each dataset/table produced in the project.
+
+## Dataset Metadata
+
+- Dataset name:
+- Version:
+- Created on (YYYY-MM-DD):
+- Created by:
+- Primary source(s):
+- Geographic scope:
+- Time coverage:
+- Refresh cadence:
+- License / usage constraints:
+
+## Table-Level Description
+
+- Table/file name:
+- Grain (row definition):
+- Key columns:
+- Join keys (if applicable):
+- Number of rows:
+- Number of columns:
+- Missingness summary:
+
+## Variable Definitions
+
+| Column name | Type | Description | Unit | Allowed values / format | Missing value handling | Source field | Transformation notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| country | string | Country name | N/A | United States, Canada, United Kingdom, Japan, China | Not allowed in final output | Country label from source | Standardized to canonical names |
+| iso3 | string | ISO 3166-1 alpha-3 code | N/A | USA, CAN, GBR, JPN, CHN | Not allowed in final output | Source country code or lookup table | Validated against controlled list |
+| year | integer | Observation year | year | 4-digit year | Remove rows with invalid year | Date/year field | Cast to int |
+| out_of_pocket_ppp | float | Out-of-pocket health expenditure per capita (PPP) | International $ | Non-negative numeric | Keep as null when missing | Indicator SH.XPD.OOPC.PP.CD | Parsed from source API response |
+
+Add one row per variable in your dataset.
+
+## Standardization Rules
+
+- Country names normalized to a single canonical format
+- Monetary values documented with exact unit and conversion basis
+- Time variables standardized to calendar year
+- Duplicate country-year rows resolved with documented tie-break logic
+
+## Data Quality Checks
+
+- Uniqueness check on country-year key
+- Type validation for numeric and date fields
+- Range checks for expenditure values (non-negative)
+- Missingness threshold checks by country and year
+- Cross-source consistency checks when merged variables are used
+
+## Assumptions and Limitations
+
+- Definition differences across countries for out-of-pocket spending
+- Potential gaps in time coverage by source
+- Currency/PPP assumptions and reference years
+- Reporting lag and revisions in official sources
+
+## Provenance
+
+- Raw file/API endpoint:
+- Extraction date:
+- Transformation notebook/script:
+- Output artifact(s):
+
+## Change Log
+
+| Date | Version | Author | Change summary |
+| --- | --- | --- | --- |
+| YYYY-MM-DD | v0.1 | Name | Initial draft |
