@@ -4,23 +4,33 @@ Use this template to document each dataset/table produced in the project.
 
 ## Dataset Metadata
 
-- Dataset name:  https://sdmx.oecd.org/public/rest/data; https://api.worldbank.org/v2/country/{}/indicator/{}?format=json&per_page=5000
-- Version:
-- Created on (2028-02-28):
+- Dataset names: https://sdmx.oecd.org/public/rest/data; https://api.worldbank.org/v2/country/{}/indicator/{}?format=json&per_page=5000
+- Created on (2028-02-21):
 - Created by: Thanh Huynh
 - Primary source(s):WHO Global Health Expenditure Database, Years 2015-2022; OECD Health Statistics, Years 2015-2022
 - Geographic scope: USA, CANADA, UK, CHINA, JAPAN
-- Time coverage: YEARS 2015 - 2022
+- Time coverage: YEARS 2020 - 2024
 - Refresh cadence:
-- License / usage constraints:
+- License / usage constraints:  OECD Data: key constraints include a maximum of 60 data downloads per hour; ban on accessing data via VPNs
+                                WHO Global Healther Expenditure Database: a user cannot use the name or emblem of the WHO without prior written
+                                approval, nor imply WHO endorsement of his/her work. Data must not be misrepresented, and a user is responsible
+                                for checking if datasets are credited to other sources.
 
 ## Table-Level Description
 
-- Table/file name:
+- Table/file name: oop_table
 - Grain (row definition):
-- Key columns:
+- Key columns: REF_AREA": {"REF_AREA":"country", "TIME_PERIOD": "year", "OBS_VALUE": "value"}
 - Join keys (if applicable):
-- Number of rows:
+- Number of rows: 224
+- Number of columns:
+- Missingness summary:
+
+- Table/file name: oop_table
+- Grain (row definition):
+- Key columns: REF_AREA": {"REF_AREA":"country", "TIME_PERIOD": "year", "OBS_VALUE": "value"}
+- Join keys (if applicable):
+- Number of rows: 224
 - Number of columns:
 - Missingness summary:
 
