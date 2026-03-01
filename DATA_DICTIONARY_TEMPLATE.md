@@ -9,8 +9,7 @@ Use this template to document each dataset/table produced in the project.
 - Created by: Thanh Huynh
 - Primary source(s):WHO Global Health Expenditure Database, Years 2015-2022; OECD Health Statistics, Years 2015-2022
 - Geographic scope: USA, CANADA, UK, CHINA, JAPAN
-- Time coverage: YEARS 2020 - 2024
-- Refresh cadence:
+- Time coverage: YEARS 2015 - 2022
 - License / usage constraints:  OECD Data: key constraints include a maximum of 60 data downloads per hour; ban on accessing data via VPNs
                                 WHO Global Healther Expenditure Database: a user cannot use the name or emblem of the WHO without prior written
                                 approval, nor imply WHO endorsement of his/her work. Data must not be misrepresented, and a user is responsible
@@ -23,8 +22,8 @@ Use this template to document each dataset/table produced in the project.
 - Key columns: REF_AREA": {"REF_AREA":"country", "TIME_PERIOD": "year", "OBS_VALUE": "value"}
 - Join keys (if applicable):
 - Number of rows: 224
-- Number of columns:
-- Missingness summary:
+- Number of columns: 7
+- Missingness summary: lack of data transparency for Japan and China
 
 - Table/file name: oop_table
 - Grain (row definition):
