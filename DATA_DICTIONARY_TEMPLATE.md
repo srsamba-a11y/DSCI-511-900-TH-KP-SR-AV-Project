@@ -4,13 +4,13 @@ Use this template to document each dataset/table produced in the project.
 
 ## Dataset Metadata
 
-- Dataset name:
+- Dataset name:  https://sdmx.oecd.org/public/rest/data; https://api.worldbank.org/v2/country/{}/indicator/{}?format=json&per_page=5000
 - Version:
-- Created on (YYYY-MM-DD):
-- Created by:
-- Primary source(s):
-- Geographic scope:
-- Time coverage:
+- Created on (2028-02-28):
+- Created by: Thanh Huynh
+- Primary source(s):WHO Global Health Expenditure Database, Years 2015-2022; OECD Health Statistics, Years 2015-2022
+- Geographic scope: USA, CANADA, UK, CHINA, JAPAN
+- Time coverage: YEARS 2015 - 2022
 - Refresh cadence:
 - License / usage constraints:
 
