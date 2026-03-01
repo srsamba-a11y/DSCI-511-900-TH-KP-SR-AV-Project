@@ -36,14 +36,14 @@ paginate: true
 
 Primary sources include:
 
-- WHO Global Health Expenditure Database
-- OECD Health Statistics
+- WHO Global Health Expenditure Database, Years 2015-2022: https://api.worldbank.org/v2/country/{}/indicator/{}?format=json&per_page=5000
+- OECD Health Statistics, Years 2015-2022: https://sdmx.oecd.org/public/rest/data
 
 ---
 
 ## Getting started: prerequisites
 
-- Python 3.10+
+- Python 3.13+
 - Jupyter Notebook (recommended)
 
 Install dependencies:
