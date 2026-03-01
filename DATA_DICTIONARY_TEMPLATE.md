@@ -68,4 +68,4 @@ Add one row per variable in your dataset.
 
 | Date | Version | Author | Change summary |
 | --- | --- | --- | --- |
-| YYYY-MM-DD | v0.1 | Name | Initial draft |
+| 2026-03-01 | v0.1 | Sharon Robinson, Khushi Patel, Thanh Huynh, Ari Voluck | Initial draft |
