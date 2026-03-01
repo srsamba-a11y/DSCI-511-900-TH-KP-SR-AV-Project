@@ -29,8 +29,8 @@ Use this template to document each dataset/table produced in the project.
 - Grain (row definition):
 - Key columns: REF_AREA": {"REF_AREA":"country", "TIME_PERIOD": "year", "OBS_VALUE": "value"}
 - Join keys (if applicable):
-- Number of rows: 224
-- Number of columns:
+- Number of rows: 40
+- Number of columns:  8
 - Missingness summary:
 
 ## Variable Definitions
