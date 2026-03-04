@@ -1,9 +1,3 @@
----
-marp: true
-theme: default
-paginate: true
----
-
 # DSCI 511 Term Project (Phase 1 - Proposal)  
 ## Comparing Out-of-Pocket Healthcare Costs Across Countries  
 
